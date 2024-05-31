@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "835531244883",
+    "project_id": "soundapp-fb90e",
+    "storage_bucket": "soundapp-fb90e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835531244883:android:1735a07db2b062d21a0da6",
+        "android_client_info": {
+          "package_name": "com.sound.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqYncmjo1CGRKUkkcgYB7KTCrK5e-oPbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
