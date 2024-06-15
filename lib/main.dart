@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:soundapp/homePage.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyHomePage(),
+      home: HomePage(),
     );
   }
 }
@@ -28,7 +29,6 @@ class _MyHomePageState extends State<MyHomePage> {
   bool isPlaying = false;
   Duration _position = Duration.zero;
   String? _downloadURL;
-
   Future<void> _initializeAndPlayMusic() async {
     try {
       _downloadURL = await FirebaseStorage.instance
@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Play Music from Firebase'),
+        title: Text('Sound App'),
       ),
       body: Center(
         child: ElevatedButton(
